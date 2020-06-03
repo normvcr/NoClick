@@ -4,6 +4,7 @@ Drag, Left, Right and Double Click the mouse using only mouse movement -- no phy
 ## Introduction
 NoClick allows the user to Drag, Left, Right and Double Click the mouse using only mouse movement -- no physical clicking is necessary.  When the mouse stops moving, four *click panes* appear, corresponding to *Drag*, *Left*, *Right* and *DoubleClick*.  When the mouse is placed into one of the click panes, the corresponding mouse action occurs where the mouse originally stopped.
 
+The document, **NoClickUserManual.pdf** details the usage of NoClcik.
 NoClick has been used on Linux and Windows.  
 
 
@@ -32,11 +33,13 @@ The advantage of this approach, is that projcts may be separately downloaded as 
 
 ## Installation
 
-NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  If BLDEV is not already installed on your machine, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md).  The Clang/LLVM libraries are *required* to build NoClick -- this is an option in the BLDEV installation.
+NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  The Clang/LLVM libraries are *required* to build NoClick -- this is an option in the BLDEV installation.  If BLDEV is not already installed on your machine, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md).  Once BLDEV is installed with the Clang/LLVM libraries, NoClick may be built by executing the following command in the DEVTOP folder of your development tree:
 
-The **Building.md** file describes how to install NoClick.
+```
+make incinst libs bins bininst
+```
+This will place the **NoClick** executable into the *DEVTOP/bin* folder.
 
-The document, **NoClickUserManual.pdf** reviews the usage of NoClcik.
 
 ## License
 NoClick is distributed under the MIT license.  The folder *Attributions* contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the NoClick distribution license.  Notably, the QT license is LGPL.

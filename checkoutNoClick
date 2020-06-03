@@ -1,0 +1,16 @@
+#!/bin/sh
+
+git sparse-checkout set --stdin  <<QQQ
+config
+dev/bin
+dev/inc
+dev/lib
+dev/src/misc
+dev/src/iogen
+dev/src/logging
+dev/src/examples
+dev/src/boot 
+dev/src/noclick/noclick
+dev/src/noclick/src
+dev/src/gui/widgets
+QQQ
