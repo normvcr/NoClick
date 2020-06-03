@@ -31,8 +31,8 @@ Add **--sparse** to the Projects clone command
 The advantage of this approach, is that projcts may be separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
 ## Installation
-NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  If BLDEV is not already installed on your machine, please follow the BLDEV installation instructions[BLDEV](https://github.com/normvcr/BLDEV)/BUILDINIG.md .  The Clang/LLVM libraries are *required* to build NoClick -- this is an option in the BLDEV installation.
 
+NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  If BLDEV is not already installed on your machine, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md).  The Clang/LLVM libraries are *required* to build NoClick -- this is an option in the BLDEV installation.
 
 The **Building.md** file describes how to install NoClick.
 
