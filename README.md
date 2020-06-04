@@ -9,7 +9,11 @@ NoClick has been used on Linux and Windows.
 
 
 ## Source code
-The source code for NoClick resides on the umbrella repository [Projects](https://github.com/normvcr/Projects), where the entire Proejects source may be obtained.
+The documentation for NoClick resides in the NoClick repository.  Obtain it with the command
+>   git clone https://github.com/normvcr/NoClick.git
+
+Now, the NoClick folder contains the NoClick documentation.
+The source code for NoClick resides on the umbrella source repository [Projects](https://github.com/normvcr/Projects), where the entire Proejects source may be obtained.
 
 Alternatively, the NoClick-specific source code may be obtained, as follows:
 
@@ -27,7 +31,10 @@ Add **--sparse** to the Projects clone command
 >   git sparse-checkout init --cone
 
 4. Get the NoClick source code with the supplied Bourne script
->   checkoutNoClick
+from the NoClick documentation folder
+>   ../NoClick/checkoutNoClick
+
+Please, note, that the above relative path assumes that the two *git clone* commands were run in the same folder, so that *Projects* and *NoClick* are sibling folders.
 
 The advantage of this approach, is that projcts may be separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
