@@ -33,7 +33,13 @@ The advantage of this approach, is that projcts may be separately downloaded as 
 
 ## Installation
 
-NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  The Clang/LLVM libraries are *required* to build NoClick -- this is an option in the BLDEV installation.  If BLDEV is not already installed on your machine, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md).  Once BLDEV is installed with the Clang/LLVM libraries, NoClick may be built by executing the following command in the DEVTOP folder of your development tree:
+NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  BLDEV has two options for its installation:
+
+- IO source code generation using the Clang/LLVM libraries
+- Managing keyboard key codes.
+
+These two options are *required* by NoClick.  If BLDEV is not already installed on your machine, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md), especially the *Platform.inc* portion of section 3.  Once BLDEV is installed with the Clang/LLVM libraries and key codes capabilities,
+NoClick may be built by executing the following command in the DEVTOP folder of your development tree:
 
 ```
 make incinst libs bins bininst
