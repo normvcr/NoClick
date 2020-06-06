@@ -38,8 +38,7 @@ Please, note, that the above relative path assumes that the two *git clone* comm
 
 The advantage of this approach, is that projcts may be separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
-## Installation
-
+## Prerequisites
 NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project, whose source code was also obtained in the previous section.  BLDEV has two options for its installation:
 
 - IO source code generation using the Clang/LLVM libraries
@@ -47,17 +46,29 @@ NoClick is built on top of the [BLDEV](https://github.com/normvcr/BLDEV) project
 
 These two options are *required* by NoClick.  If BLDEV is not already installed on your machine with these two options, please follow the BLDEV installation [instructions](https://github.com/normvcr/BLDEV/blob/master/BUILDING.md), especially the *Platform.inc* portion of section 3.
 
-For Windows users, please copy the file **noclickIcon.ico** to the folder
+### Linux
+Use your system installer to get the QT development libraries, for example on Fedora:
+
+```
+dnf install qt5-devl
+```
+### Windows
+The open source edition of the QT libraries may be obtained from
+[QT open source](https://www.qt.io/download-open-source) .
+
+Please copy the file **noclickIcon.ico** to the folder
 > RESOURCE_DIR/NoClick
 
 where RESOURCE_DIR is a Make variable defined in *Platform.inc*.
 
+
+## Installation
 NoClick may be built by executing the following command in the DEVTOP folder of your development tree:
 
 ```
 make incinst libs bins bininst
 ```
-This will place the **NoClick** executable into the *DEVTOP/bin* folder.  Furhter setup information is in the NoClickUserManual, section 1.
+This will place the **NoClick** executable into the *DEVTOP/bin* folder.  Further setup information is in the NoClickUserManual, section 1.
 
 
 ## License
